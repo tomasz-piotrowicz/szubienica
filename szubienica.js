@@ -9,14 +9,14 @@ var no = new Audio("no.wav");
 
 var haslo1 = "";
 
-for(i=0; i<dlugosc; i++) {
+for (i=0; i<dlugosc; i++)
+{
 	if (haslo.charAt(i)==" ") haslo1 = haslo1 + " ";
 	else haslo1 = haslo1 + "-";
 }
 
-
-
-function wypisz_haslo() {
+function wypisz_haslo()
+{
 	document.getElementById("plansza").innerHTML = haslo1;
 }
 
@@ -60,9 +60,12 @@ litery[32] = "Z";
 litery[33] = "Ż";
 litery[34] = "Ź";
 
-function start() {
+
+
+function start()
+{
 	
-	vat tresc_diva = "";
+	var tresc_diva ="";
 	
 	for (i=0; i<=34; i++)
 	{
@@ -72,7 +75,9 @@ function start() {
 	}
 	
 	document.getElementById("alfabet").innerHTML = tresc_diva;
-	wypiszHaslo();
+	
+	
+	wypisz_haslo();
 }
 
 String.prototype.ustawZnak = function(miejsce, znak)
